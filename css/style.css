@@ -1,19 +1,22 @@
 :root {
-  --title-font: 'Amatic SC', cursive;
-  --text-font: 'Raleway', sans-serif;
+  --title-font: "Amatic SC", cursive;
+  --text-font: "Raleway", sans-serif;
   --dark-grey: rgb(76, 83, 103);
   --mid-grey: rgb(138, 146, 168);
   --light-grey: rgb(211, 214, 222);
   --orange-yellow: rgb(255, 196, 0);
   --bg-dark-grey: rgba(76, 83, 103, 0.75);
-  --bg-mid-grey: rgba(138, 146, 168,0.75);
-  --bg-light-grey: rgb(211, 214, 222,0.75);
-  --bg-orange-yellow: rgb(255, 196, 0,0.75);
+  --bg-mid-grey: rgba(138, 146, 168, 0.75);
+  --bg-light-grey: rgb(211, 214, 222, 0.75);
+  --bg-orange-yellow: rgb(255, 196, 0, 0.75);
 }
 
 body {
-  background-image: 
-    linear-gradient(155deg,rgba(252, 189, 0, 0.1),rgba(252, 189, 0, 0.1)),
+  background-image: linear-gradient(
+      155deg,
+      rgba(252, 189, 0, 0.1),
+      rgba(252, 189, 0, 0.1)
+    ),
     url(https://www.walkhighlands.co.uk/lochlomond/2_2/2_2_1l.JPG);
   background-repeat: no-repeat;
   background-size: cover;
@@ -22,34 +25,38 @@ body {
   position: relative;
   width: 100%;
   margin: 0px;
-/*   top: 0; */
-/*   left: -10px; */
+  /*   top: 0; */
+  /*   left: -10px; */
   background-color: var(--bg-light-greylight-grey);
 }
-h3, p {
+h3,
+p {
   font-family: var(--text-font);
 }
-a, a:active, a:visited {
+a,
+a:active,
+a:visited {
   max-width: max-content;
   text-decoration: none;
   color: var(--dark-grey);
- }
+}
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   font-weight: bold;
   color: var(--dark-grey);
 }
 
-
-#navbar, #footer {
+#navbar,
+#footer {
   width: 100vw;
   background-color: var(--orange-yellow);
-/*   border: 2px groove var(--mid-grey); */
+  /*   border: 2px groove var(--mid-grey); */
   box-shadow: 0px 0px 5px var(--mid-grey);
   font-family: var(--title-font);
   color: var(--mid-grey);
 }
- #navbar {
+#navbar {
   height: 3em;
   display: inline-flex;
   position: fixed;
@@ -60,20 +67,24 @@ a:hover, a:focus {
 }
 
 .navlink {
-  margin: auto 10px;  
+  margin: auto 10px;
 
   font-size: 22px;
 }
 
-#welcome,#contact-target {  
+#welcome,
+#contact-target {
   position: relative;
   width: 100vw;
   top: 0;
   left: 0;
-  padding: 3em 0px 1em 0px;
+  padding: 3em 0px 0px 0px;
   margin: 0;
-  background-image: 
-    linear-gradient(155deg,rgba(252, 189, 0, 0.1),rgba(252, 189, 0, 0.1)),
+  background-image: linear-gradient(
+      155deg,
+      rgba(252, 189, 0, 0.1),
+      rgba(252, 189, 0, 0.1)
+    ),
     url(https://www.walkhighlands.co.uk/lochlomond/2_2/2_2_1l.JPG);
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,9 +97,9 @@ a:hover, a:focus {
 #contact-target {
   font-family: var(--title-font);
   background-image: 
-    /* linear-gradient(155deg, rgba(15, 29, 156, 0.35), rgba(252, 189, 0, 0.35), rgba(15, 29, 156, 0.35)), */
-    url(https://www.walkhighlands.co.uk/lochlomond/2_2/2_2_1l.JPG);
+    /* linear-gradient(155deg, rgba(15, 29, 156, 0.35), rgba(252, 189, 0, 0.35), rgba(15, 29, 156, 0.35)), */ url(https://www.walkhighlands.co.uk/lochlomond/2_2/2_2_1l.JPG);
 }
+
 #welcome-text {
   max-width: 900px;
   display: block;
@@ -106,42 +117,32 @@ a:hover, a:focus {
 #welcome-text h1 {
   text-align: center;
 }
-.availability-button {
-  text-align: center;
-  margin: 3em auto;
-  padding: 20px;
-  width: 6em;
-  background: var(--orange-yellow);
-  color: var(--dark-grey);
-  border: 2px solid white;
-  font-family: var(--title-font);
-  font-size: 24px;
-}
+
 .lg-container {
   background-color: var(--bg-light-grey);
   width: 100%;
 }
-#info,#about {
-  display:block;
+#info,
+#about {
+  display: block;
   margin: auto;
   max-width: 900px;
   color: var(--dark-grey);
   padding: 3em 2em;
-
 }
 #info {
   display: block;
   margin: auto;
-  max-width: max-content; 
+  max-width: max-content;
 }
 
 .svg-icon {
   width: 40px;
   height: auto;
-	background-color: var(--mid-grey);
-	padding: 4px;
-	/*border: 1px solid var(--orange-yellow);*/
-	border-radius: 5px;
+  background-color: var(--mid-grey);
+  padding: 4px;
+  /*border: 1px solid var(--orange-yellow);*/
+  border-radius: 5px;
 }
 
 .feature {
@@ -172,11 +173,10 @@ li {
   display: block;
   margin: auto;
   max-width: 75vw;
-  
 }
 .yellow-box {
   background-color: var(--orange-yellow);
-  opacity: 85%; 
+  opacity: 85%;
   color: var(--dark-grey);
   font-size: 16px;
   padding: 1px 20px;
@@ -195,16 +195,14 @@ li {
   font-size: 14px;
 }
 #contact-target a {
-
   text-decoration: underline;
 }
-#gallery{
+#gallery {
   text-align: center;
   background-color: var(--bg-dark-grey);
   padding: 3em 2em;
 }
 .gallery-container {
-
   max-height: 500px;
   overflow: scroll;
   display: block;
@@ -219,8 +217,8 @@ li {
   border: 2px solid var(--light-grey);
 }
 #gallery img:hover {
-	transition: 0.75s;
-	transform: scale(1.05);
+  transition: 0.75s;
+  transform: scale(1.05);
 }
 .input-box {
   width: 250px;
@@ -235,4 +233,45 @@ li {
   padding: 20px;
   margin: 0px;
   font-family: var(--title-font);
+}
+.elfsight-app-4a7379c7-484f-4e30-ba38-d261baf8e9c7 {
+  font-family: var(--text-font);
+}
+
+.widget {
+  margin-top: 3em;
+  opacity: 90%;
+  font-family: var(--title-font);
+  background: var(--orange-yellow);
+  padding: 30px 30px 30px 20px;
+  width: 100%;
+}
+
+.widget_input {
+  padding: 5px;
+  border-radius: 2px;
+  border: none;
+  margin: 4px;
+  max-width: 300px;
+}
+
+/* .check-availability {
+  border: 2px solid white !important;
+} */
+
+.datepicker-top-left,
+.datepicker-top-right {
+  transition: none;
+}
+
+.availability-button {
+  text-align: center;
+  margin: 3em auto;
+  padding: 20px;
+  width: 6em;
+  background: var(--orange-yellow);
+  color: var(--dark-grey);
+  border: 2px solid white;
+  font-family: var(--title-font);
+  font-size: 24px;
 }
