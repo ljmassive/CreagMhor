@@ -43,7 +43,7 @@
     <input class="widget_input" type="hidden" name="w_tkn" value="QD3BoD8WJKxuGfuSw2xJOASIcletYOfQGL2Za4vMvArASVEGtt8xK2Hg0vROe">
     <input class="widget_input" type="hidden" id="check-in-date-to-send" name="check_in_date">
     <input class="widget_input" type="hidden" id="check-out-date-to-send" name="check_out_date">
-    <input type="submit" class="availability-button" value="Check Availability">
+    <input type="submit" class="availability-button main-button" value="Check Availability">
   </form>
 </div>
 
@@ -136,10 +136,11 @@
 
 <div class="lg-container">
   <div id="about">
-    <h3>About Creag Mhor Apartment</h3>
+    <h2>About Creag Mhor Apartment</h2>
     <hr >
     <p>The apartment was recently redecorated and is a spacious two-bedroom first floor maisonette, which comfortably sleeps four, perfect for couples and families. The whole of the apartment is yours to use for the duration of your stay. Whether you are here for a weekend-break or for a month, Creag Mhor Apartment is your home-away-from-home; with all bedding and towels provided, washing and kitchen facilities, and entertainment system with streaming services available for cozy evenings in. Outside the property there is a communal close, drying green and lawned area.</p>
     <p>Creag Mhor Apartment is located in the heart of the picturesque village of Aberfoyle, in The Trossach's, Scotland's first National Park. It is ideally situated for easy access to all amenities - bars, restaurants, shops, play park, golf course, etc. - and just minutes away from the fabulous Queen Elizabeth Forest Park which surrounds the village, where you can walk, fish, cycle to your hearts content. The Aberfoyle 18 hole golf course is a 5 minute drive and the Lake of Menteith Fishery just 5 miles away.</p>
+    <p>For more ideas of activities in the area head over to <a target="_blank" href="https://www.facebook.com/Creag-Mhor-Self-Catering-Apartment-Aberfoyle-106116124456414/" style="text-decoration: underline;">our Facebook page</a>, where we regularly share posts of things to do in the local area. Check out our photo albums for even more!</p>
     <script src="https://apps.elfsight.com/p/platform.js" defer></script>
     <div class="elfsight-app-4a7379c7-484f-4e30-ba38-d261baf8e9c7"></div>
     <form class="widget" target="_blank" action="https://portal.freetobook.com/reservations">
@@ -157,81 +158,79 @@
   <div id="contact">
 
     <div id="contact-text" class="yellow-box">
-      <p>We look forward to welcoming you to Creag Mhor Self-Catering Holiday Apartment!</p>
-      <p>Prices are from £XX per night, with a minimum of 2 nights stay. Discounted rates are available when booking directly with us, so please get in touch! </p>
-      <p>To make an enquiry please: 
-      <ul>
-        <li> call Tristan on <a href="tel:+447810165777">(+44)7810 165777</a>,</li>
-        <li> fill out the form and we will get back to you. </li>
-      </ul>
+      <p>We look forward to welcoming you to Creag Mhor Self-Catering Holiday Apartment!</p><br>
+      <p>Prices are from £XX per night, with a minimum of 2 nights stay. Discounted rates are available when booking directly with us, so please get in touch! </p><br>
+      <p>To make an enquiry please call Tristan on <a href="tel:+447810165777">(+44)7810 165777</a> or fill out the form and we will get back to you.
       </p>
     </div>
-    <form id="contact-form" class="yellow-box" action=”mailto:lucymassie@live.co.uk” method=”POST” enctype=”multipart/form-data” name=”contact-form”>
-      <div class="form-group">
-        <label id="name-label">Name</label><br>
-        <input type="text" class="input-box" id="name" placeholder="Your Name" required>
-      </div>
-      <div class="form-group">
-        <label id="email-label">Email</label><br>
-        <input type="email" class="input-box" id="email" placeholder="example@email.com" required>
-      </div>
-      <div class="form-group">
-        <label id="phone-label">Phone</label><br>
-        <input type="text" class="input-box" id="phone" placeholder="(+44)7123456789">
-      </div>
-      <div class="form-group">
-        <label id="check-in-label">Check-in date</label><br>
-        <input type="date" class="input-box" id="check-in" placeholder="DD-MM-YY">
-      </div>
-      <div class="form-group">
-        <label id="check-out-label">Check-out date</label><br>
-        <input type="date" class="input-box" id="check-out" placeholder="DD-MM-YY">
-      </div>
+    <div id="contact-form">
+        <form class="yellow-box" action=”mailto:lucymassie@live.co.uk” method=”POST” enctype=”multipart/form-data” name=”contact-form”>
+        <div class="form-group">
+          <label id="name-label">Name</label><br>
+          <input type="text" class="input-box" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label id="email-label">Email</label><br>
+          <input type="email" class="input-box" id="email" placeholder="example@email.com" required>
+        </div>
+        <div class="form-group">
+          <label id="phone-label">Phone</label><br>
+          <input type="text" class="input-box" id="phone" placeholder="(+44)7123456789">
+        </div>
+        <div class="form-group">
+          <label id="check-in-label">Check-in date</label><br>
+          <input type="date" class="input-box" id="check-in" placeholder="DD-MM-YY">
+        </div>
+        <div class="form-group">
+          <label id="check-out-label">Check-out date</label><br>
+          <input type="date" class="input-box" id="check-out" placeholder="DD-MM-YY">
+        </div>
 
-      <div class="form-group">
-        <label id="flexible">Are your dates flexible?</label><br>
-        <input
-          name="flexibility"
-          value="flexible"
-          type="checkbox"
-          class="input-checkbox"
-        />
-      </div>
-
-
-
-      <div class="form-group">
-        <label id="contact-method">How would you prefer us to contact you?</label><br>
-        <label class="form-opt"><input
-            name="contact-method"
-            value="email"
-            type="radio"
-            class="input-radio"
-          />Email</label>
-        <label class="form-opt"><input 
-            name="contact-method"
-            value="phonecall"
-            type="radio"
+        <div class="form-group">
+          <label id="flexible">Are your dates flexible?</label><br>
+          <input
+            name="flexibility"
+            value="flexible"
+            type="checkbox"
             class="input-checkbox"
-          />Phonecall</label>
-    </div>
-      <div class="form-group">
-        
-        <label>Please enter any additional information:</label><br>
-        <textarea
-          id="extra-info"
-          class="input-box"
-          name="comment"
-          placeholder="Any additional comments..."
-        ></textarea>
-      </div>
+          />
+        </div>
 
-      <div class="form-group">
-        <button type="submit" id="submit">
-          Submit
-        </button>
+
+
+        <div class="form-group">
+          <label id="contact-method">How would you prefer us to contact you?</label><br>
+          <label class="form-opt"><input
+              name="contact-method"
+              value="email"
+              type="radio"
+              class="input-radio"
+            />Email</label>
+          <label class="form-opt"><input 
+              name="contact-method"
+              value="phonecall"
+              type="radio"
+              class="input-checkbox"
+            />Phonecall</label>
       </div>
-    </form>
+        <div class="form-group">
+          
+          <label>Please enter any additional information:</label><br>
+          <textarea
+            id="extra-info"
+            class="input-box"
+            name="comment"
+            placeholder="Any additional comments..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
 <div id="footer">

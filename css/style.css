@@ -24,13 +24,13 @@ body {
   background-attachment: fixed;
   background-position: 0 45px;
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   margin: 0px;
   /*   top: 0; */
   /*   left: -10px; */
   background-color: var(--bg-light-greylight-grey);
 }
-h3,
+h2,
 p {
   font-family: var(--text-font);
 }
@@ -54,7 +54,7 @@ a:focus,
 
 #navbar,
 #footer {
-  width: 100vw;
+  width: 100%;
   background-color: var(--orange-yellow);
   /*   border: 2px groove var(--mid-grey); */
   box-shadow: 0px 0px 5px var(--mid-grey);
@@ -73,17 +73,16 @@ a:focus,
 
 .navlink {
   margin: auto 10px;
-
   font-size: 22px;
 }
 
 #welcome,
 #contact-target {
   position: relative;
-  width: 100vw;
+  width: 100%;
   top: 0;
   left: 0;
-  padding: 3em 0px 0px 0px;
+  padding: 4em 0px;
   margin: 0;
   background-image: linear-gradient(
       155deg,
@@ -121,11 +120,13 @@ a:focus,
 }
 #welcome-text h1 {
   text-align: center;
+  margin-bottom: 0px;
 }
 
 .lg-container {
   background-color: var(--bg-light-grey);
   width: 100%;
+  padding: 6em 0;
 }
 #info,
 #about {
@@ -133,11 +134,10 @@ a:focus,
   margin: auto;
   max-width: 900px;
   color: var(--dark-grey);
-  padding: 3em 2em;
+  padding: 0 20px;
 }
 #info {
-  display: block;
-  margin: auto;
+
   max-width: max-content;
 }
 
@@ -159,53 +159,12 @@ a:focus,
 .feature p {
   margin: 0 1em;
 }
-#about h3 {
-  text-align: right;
-}
-#about p {
-  text-align: justify;
-}
-li {
-  list-style-type: disc;
-  font-family: var(--text-font);
-}
-#contact {
-  display: block;
-  margin: auto;
-  max-width: 900px;
-}
-#contact-text {
-  display: block;
-  margin: auto;
-  max-width: 75vw;
-}
-.yellow-box {
-  background-color: var(--orange-yellow);
-  opacity: 85%;
-  color: var(--dark-grey);
-  font-size: 16px;
-  padding: 1px 20px;
-  border-radius: 2px;
-}
-#contact-form {
-  display: block;
-  margin: 3em auto;
-  width: min-content;
-  padding: 1em;
-  font-size: 20px;
-  font-weight: bold;
-}
-.form-opt {
-  font-family: var(--text-font);
-  font-size: 14px;
-}
-#contact-target a {
-  text-decoration: underline;
-}
+
 #gallery {
   text-align: center;
   background-color: var(--bg-dark-grey);
-  padding: 3em 2em;
+  padding: 4em 0px;
+  font-size: 24px;
 }
 .gallery-container {
   max-height: 500px;
@@ -225,6 +184,77 @@ li {
   transition: 0.2s;
   transform: scale(1.05);
 }
+
+#about h2 {
+  text-align: right;
+}
+#about p {
+  text-align: justify;
+}
+li {
+  list-style-type: disc;
+  font-family: var(--text-font);
+}
+#contact {
+  display: block;
+  margin: auto;
+  max-width: 900px;
+}
+#contact-text {
+  display: block;
+  max-width: 75vw;
+}
+.yellow-box {
+  margin: auto;
+  background-color: var(--orange-yellow);
+  opacity: 95%;
+  color: var(--dark-grey);
+  font-size: 16px;
+  padding: 30px;
+  border-radius: 2px;
+}
+.yellow-box p {
+  margin: 0px;
+}
+#contact-form {
+  display: block;
+  margin: 5em auto 0 auto;
+  width: min-content;
+  padding: 1em;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-group {
+  margin: 1em 0;
+
+}
+
+label {
+  font-size: 22px;
+}
+
+.form-opt {
+  font-family: var(--text-font);
+  font-size: 14px;
+
+}
+
+
+#submit {
+  font-family: var(--title-font);
+  color: var(--dark-grey);
+  background: var(--orange-yellow);
+  padding: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 2px solid white;
+  opacity: 100%;
+}
+#contact-target a {
+  text-decoration: underline;
+}
+
 .input-box {
   width: 250px;
   font-family: var(--text-font);
@@ -248,7 +278,7 @@ li {
   margin: 0 auto;
   font-family: var(--title-font);
   text-align: center;
-  padding: 30px;
+
 
 }
 
@@ -272,7 +302,7 @@ li {
 
 .availability-button {
   text-align: center;
-  margin: 3em auto;
+  margin: 3em auto 0 auto; /* 3em auto; */
   padding: 20px;
   width: 168px;
   background: var(--orange-yellow);
