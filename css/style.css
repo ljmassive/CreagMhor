@@ -5,13 +5,14 @@
   --mid-grey: rgb(138, 146, 168);
   --light-grey: rgb(211, 214, 222);
   --orange-yellow: rgb(255, 196, 0);
-  --bg-dark-grey: rgba(76, 83, 103, 0.75);
-  --bg-mid-grey: rgba(138, 146, 168, 0.75);
-  --bg-light-grey: rgb(211, 214, 222, 0.75);
-  --bg-orange-yellow: rgb(255, 196, 0, 0.75);
+  --bg-dark-grey: rgba(76, 83, 103, 0.90);
+  --bg-mid-grey: rgba(138, 146, 168, 0.90);
+  --bg-light-grey: rgb(211, 214, 222, 0.9);
+  --bg-orange-yellow: rgb(255, 196, 0, 0.9);
 }
 
 body {
+  font-size: medium;
   background-image: linear-gradient(
       155deg,
       rgba(252, 189, 0, 0.1),
@@ -35,14 +36,18 @@ p {
 }
 a,
 a:active,
-a:visited {
+a:visited,
+.availability-button:active,
+.availability-button:visited {
   max-width: max-content;
   text-decoration: none;
   color: var(--dark-grey);
 }
 
 a:hover,
-a:focus {
+a:focus,
+.availability-button:hover,
+.availability-button:focus {
   font-weight: bold;
   color: var(--dark-grey);
 }
@@ -208,8 +213,8 @@ li {
   display: block;
   margin: auto;
   max-width: 1000px;
-  border: 2px solid var(--orange-yellow);
-  background-color: var(--bg-mid-grey);
+  /* border: 2px solid var(--orange-yellow);
+  background-color: var(--bg-mid-grey); */
 }
 #gallery img {
   width: 200px;
@@ -217,7 +222,7 @@ li {
   border: 2px solid var(--light-grey);
 }
 #gallery img:hover {
-  transition: 0.75s;
+  transition: 0.2s;
   transform: scale(1.05);
 }
 .input-box {
@@ -239,12 +244,12 @@ li {
 }
 
 .widget {
-  margin-top: 3em;
-  opacity: 90%;
+  display: block;
+  margin: 0 auto;
   font-family: var(--title-font);
-  background: var(--orange-yellow);
-  padding: 30px 30px 30px 20px;
-  width: 100%;
+  text-align: center;
+  padding: 30px;
+
 }
 
 .widget_input {
@@ -253,6 +258,7 @@ li {
   border: none;
   margin: 4px;
   max-width: 300px;
+  font-family: var(--text-font);
 }
 
 /* .check-availability {
@@ -268,7 +274,7 @@ li {
   text-align: center;
   margin: 3em auto;
   padding: 20px;
-  width: 6em;
+  width: 168px;
   background: var(--orange-yellow);
   color: var(--dark-grey);
   border: 2px solid white;

@@ -1,3 +1,4 @@
+
 var $checkInDatePicker = $('#check-in-date');
         var $checkOutDatePicker = $('#check-out-date');
 
