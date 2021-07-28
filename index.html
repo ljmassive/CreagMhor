@@ -3,17 +3,15 @@
 <head>
   <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
   <meta content="utf-8" http-equiv="encoding">
-	<link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
-	<script src="js/lightbox-plus-jquery.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css" >
+  <link rel="stylesheet" type="text/css" href="css/lightbox.css">
+  <script src="js/lightbox-plus-jquery.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Raleway&display=swap" rel="stylesheet"> 
-
-  <script src="js/jquery.min.js"></script>
   <script src="js/datepicker.min.js"></script>
   <link  href="css/datepicker.min.css" rel="stylesheet">  
-  <script src="js/widget.js"></script>
+  <!-- <script src="js/widget.js"></script> -->
 <head>
 
 <body>
@@ -21,7 +19,7 @@
   
     <a href=#welcome class="navlink">Home</a>
     <a href=#gallery class="navlink">Gallery</a>
-    <a href=#about class="navlink">About Us</a>
+    <a href=#about-target class="navlink">About Us</a>
     <a href=#contact-target class="navlink">Contact</a>
  
 </nav>
@@ -99,30 +97,30 @@
 
 <div id="gallery">
   <div class="gallery-container">
-    <a href="images/01-front.jpg"             data-lightbox="mygallery"><img src="images/01-front-small.jpg" alt="View from the front door."></a>
-    <a href="images/02-kitchen-01.jpg"        data-lightbox="mygallery"><img src="images/02-kitchen-01-small.jpg" alt="Breakfast area in the kitchen.""></a>
-    <a href="images/03-kitchen-02.jpg"        data-lightbox="mygallery"><img src="images/03-kitchen-02-small.jpg" alt="View of the kitchen; showing induction hob and oven."></a>
-    <a href="images/04-kitchen-03.jpg"        data-lightbox="mygallery"><img src="images/04-kitchen-03-small.jpg" alt="View of the kitchen; showing fridge-freezer and washing machine."></a>
-    <a href="images/05-livingroom1.jpg"       data-lightbox="mygallery"><img src="images/05-livingroom1-small.jpg" alt="Comfy seating in the living room"></a>
-    <a href="images/06-view2.jpg"             data-lightbox="mygallery"><img src="images/06-view2-small.jpg"" alt="View from the living room, towards village car park."></a>
-    <a href="images/07-view3.jpg"             data-lightbox="mygallery"><img src="images/07-view3-small.jpg" alt="View from the living room, towards Queen Elizabeth Forest Park."></a>
-    <a href="images/08-bedroom1.jpg"          data-lightbox="mygallery"><img src="images/08-bedroom1-small.jpg" alt="Master bedroom"></a>
-    <a href="images/09-lamp.jpg"              data-lightbox="mygallery"><img src="images/09-lamp-small.jpg" alt="View from window"></a>
-    <a href="images/10-wardrobe.jpg"          data-lightbox="mygallery"><img src="images/10-wardrobe-small.jpg" alt="Flowers"></a>
-    <a href="images/11-mirror.jpg"            data-lightbox="mygallery"><img src="images/11-mirror-small.jpg" alt="View from the front door."></a>
-    <a href="images/12-thistle.jpg"           data-lightbox="mygallery"><img src="images/12-thistle-small.jpg" alt="Breakfast area in the kitchen.""></a>
-    <a href="images/13-coo.jpg"               data-lightbox="mygallery"><img src="images/13-coo-small.jpg" alt="View of the kitchen; showing induction hob and oven."></a>
-    <a href="images/14-bedroom-22.jpg"        data-lightbox="mygallery"><img src="images/14-bedroom-22-small.jpg" alt="View of the kitchen; showing fridge-freezer and washing machine."></a>
-    <a href="images/15-bedroom2.jpg"          data-lightbox="mygallery"><img src="images/15-bedroom2-small.jpg" alt="Comfy seating in the living room"></a>
-    <a href="images/16-bed-view.jpg"          data-lightbox="mygallery"><img src="images/16-bed-view-small.jpg"" alt="View from the living room, towards village car park."></a>
-    <a href="images/17-coo2.jpg"              data-lightbox="mygallery"><img src="images/17-coo2-small.jpg" alt="View from the living room, towards Queen Elizabeth Forest Park."></a>
-    <a href="images/18-bathroom.jpg"          data-lightbox="mygallery"><img src="images/18-bathroom-small.jpg" alt="Master bedroom"></a>
-    <a href="images/19-tea-set.jpg"           data-lightbox="mygallery"><img src="images/19-tea-set-small.jpg" alt="View from window"></a>
-    <a href="images/20-stairs.jpg"            data-lightbox="mygallery"><img src="images/20-stairs-small.jpg" alt="Flowers"></a>
-    <a href="images/21-dog.png"               data-lightbox="mygallery"><img src="images/21-dog-small.png" alt="View from the front door."></a>
-    <a href="images/22-livingroom_table.png"  data-lightbox="mygallery"><img src="images/22-livingroom_table-small.png" alt="Breakfast area in the kitchen.""></a>
-    <a href="images/23-flowers.jpg"           data-lightbox="mygallery"><img src="images/23-flowers-small.jpg" alt="View of the kitchen; showing induction hob and oven."></a>
-    <a href="images/24-woodland.jpg"          data-lightbox="mygallery"><img src="images/24-woodland-small.jpg" alt="View of the kitchen; showing fridge-freezer and washing machine."></a>
+    <a href="images/01-front.jpg"             data-lightbox="mygallery" data-title="View from the front door."><img src="images/01-front-small.jpg" alt="View from the front door."></a>
+    <a href="images/02-kitchen-01.jpg"        data-lightbox="mygallery" data-title="Breakfast area in the kitchen."><img src="images/02-kitchen-01-small.jpg" alt="Breakfast area in the kitchen.""></a>
+    <a href="images/03-kitchen-02.jpg"        data-lightbox="mygallery" data-title="View of the kitchen; showing induction hob and oven."><img src="images/03-kitchen-02-small.jpg" alt="View of the kitchen; showing induction hob and oven."></a>
+    <a href="images/04-kitchen-03.jpg"        data-lightbox="mygallery" data-title="View of the kitchen; showing fridge-freezer and washing machine."><img src="images/04-kitchen-03-small.jpg" alt="View of the kitchen; showing fridge-freezer and washing machine."></a>
+    <a href="images/05-livingroom1.jpg"       data-lightbox="mygallery" data-title="Comfy seating in the fresh and light living room"><img src="images/05-livingroom1-small.jpg" alt="Comfy seating in the fresh and light living room"></a>
+    <a href="images/06-view2.jpg"             data-lightbox="mygallery" data-title="View from the living room, towards village car park."><img src="images/06-view2-small.jpg"" alt="View from the living room, towards village car park."></a>
+    <a href="images/07-view3.jpg"             data-lightbox="mygallery" data-title="View from the living room, towards Queen Elizabeth Forest Park."><img src="images/07-view3-small.jpg" alt="View from the living room, towards Queen Elizabeth Forest Park."></a>
+    <a href="images/08-bedroom1.jpg"          data-lightbox="mygallery" data-title="Master bedroom"><img src="images/08-bedroom1-small.jpg" alt="Master bedroom"></a>
+    <a href="images/09-lamp.jpg"              data-lightbox="mygallery" data-title="Master bedroom furnishings."><img src="images/09-lamp-small.jpg" alt="Master bedroom furnishings."></a>
+    <a href="images/10-wardrobe.jpg"          data-lightbox="mygallery" data-title="Fitted double wardrobe in the master bedroom."><img src="images/10-wardrobe-small.jpg" alt="Fitted double wardrobe in the master bedroom."></a>
+    <a href="images/11-mirror.jpg"            data-lightbox="mygallery" data-title="Master bedroom furnishings."><img src="images/11-mirror-small.jpg" alt="Master bedroom furnishings."></a>
+    <a href="images/12-thistle.jpg"           data-lightbox="mygallery" data-title="Master bedroom furnishings."><img src="images/12-thistle-small.jpg" alt="Master bedroom furnishings.""></a>
+    <a href="images/13-coo.jpg"               data-lightbox="mygallery" data-title="Furnishings in second bedroom."><img src="images/13-coo-small.jpg" alt="Furnishings in second bedroom."></a>
+    <a href="images/14-bedroom-22.jpg"        data-lightbox="mygallery" data-title="Second bedroom."><img src="images/14-bedroom-22-small.jpg" alt="Second bedroom."></a>
+    <a href="images/15-bedroom2.jpg"          data-lightbox="mygallery" data-title="Second bedroom."><img src="images/15-bedroom2-small.jpg" alt="Second bedroom."></a>
+    <a href="images/16-bed-view.jpg"          data-lightbox="mygallery" data-title="View from the second bedroom."><img src="images/16-bed-view-small.jpg" alt="View from the second bedroom."></a>
+    <a href="images/17-coo2.jpg"              data-lightbox="mygallery" data-title="Furnishings in second bedroom."><img src="images/17-coo2-small.jpg" alt="Furnishings in second bedroom."></a>
+    <a href="images/18-bathroom.jpg"          data-lightbox="mygallery" data-title="Family bathroom with shower."><img src="images/18-bathroom-small.jpg" alt="Family bathroom with shower."></a>
+    <a href="images/19-tea-set.jpg"           data-lightbox="mygallery" data-title="Your morning cuppa!"><img src="images/19-tea-set-small.jpg" alt="Your morning cuppa!"></a>
+    <a href="images/20-stairs.jpg"            data-lightbox="mygallery" data-title="View down the stairs."><img src="images/20-stairs-small.jpg" alt="View down the stairs."></a>
+    <a href="images/21-dog.png"               data-lightbox="mygallery" data-title="A dog enjoying local nature."><img src="images/21-dog-small.png" alt="A dog enjoying local nature."></a>
+    <a href="images/22-livingroom_table.png"  data-lightbox="mygallery" data-title="A spot of lunch in the living room."><img src="images/22-livingroom_table-small.png" alt="A spot of lunch in the living room.""></a>
+    <a href="images/23-flowers.jpg"           data-lightbox="mygallery" data-title="Flowers at Doon Hill and Fairy Knowe, a lovely walk that is just on your doorstep."><img src="images/23-flowers-small.jpg" alt="Flowers at Doon Hill and Fairy Knowe, a lovely walk that is just on your doorstep."></a>
+    <a href="images/24-woodland.jpg"          data-lightbox="mygallery" data-title="Footpath in Queen Elizabeth Forest Park, 10 mins walk away from the apartment."><img src="images/24-woodland-small.jpg" alt="Footpath in Queen Elizabeth Forest Park, 10 mins walk away from the apartment."></a>
 
   </div>
   <form class="widget" target="_blank" action="https://portal.freetobook.com/reservations">
@@ -134,7 +132,7 @@
   </form>
 </div>
 
-<div class="lg-container">
+<div id="about-target" class="lg-container">
   <div id="about">
     <h2>About Creag Mhor Apartment</h2>
     <hr >

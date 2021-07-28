@@ -18,11 +18,11 @@ body {
       rgba(252, 189, 0, 0.1),
       rgba(252, 189, 0, 0.1)
     ),
-    url(https://www.walkhighlands.co.uk/lochlomond/2_2/2_2_1l.JPG);
+    url(file:///home/lucy/Documents/Tris/images/16-bed-view.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 900px;
   background-attachment: fixed;
-  background-position: 0 45px;
+  background-position: 50% 35%;
   position: relative;
   /* width: 100%; */
   margin: 0px;
@@ -30,6 +30,7 @@ body {
   /*   left: -10px; */
   background-color: var(--bg-light-greylight-grey);
 }
+/*https://www.walkhighlands.co.uk/lochlomond/2_2/2_2_1l.JPG*/
 h2,
 p {
   font-family: var(--text-font);
@@ -89,19 +90,19 @@ a:focus,
       rgba(252, 189, 0, 0.1),
       rgba(252, 189, 0, 0.1)
     ),
-    url(https://www.walkhighlands.co.uk/lochlomond/2_2/2_2_1l.JPG);
+    url(file:///home/lucy/Documents/Tris/images/16-bed-view.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 900px;
   background-attachment: fixed;
-  background-position: 0 45px;
+  background-position: 50% 35% ;/*0 45px;*/
   font-family: var(--title-font);
   color: white;
   font-size: 24px;
 }
 #contact-target {
   font-family: var(--title-font);
-  background-image: 
-    /* linear-gradient(155deg, rgba(15, 29, 156, 0.35), rgba(252, 189, 0, 0.35), rgba(15, 29, 156, 0.35)), */ url(https://www.walkhighlands.co.uk/lochlomond/2_2/2_2_1l.JPG);
+  /* background-image: 
+    /* linear-gradient(155deg, rgba(15, 29, 156, 0.35), rgba(252, 189, 0, 0.35), rgba(15, 29, 156, 0.35)),  url(file:///home/lucy/Documents/Tris/images/16-bed-view-small.jpg); */
 }
 
 #welcome-text {
@@ -165,6 +166,7 @@ a:focus,
   background-color: var(--bg-dark-grey);
   padding: 4em 0px;
   font-size: 24px;
+  font-family: var(--text-font);
 }
 .gallery-container {
   max-height: 500px;
@@ -242,6 +244,7 @@ label {
 
 
 #submit {
+  margin-top: 1em;
   font-family: var(--title-font);
   color: var(--dark-grey);
   background: var(--orange-yellow);
@@ -271,6 +274,7 @@ label {
 }
 .elfsight-app-4a7379c7-484f-4e30-ba38-d261baf8e9c7 {
   font-family: var(--text-font);
+  margin-top: 2em;
 }
 
 .widget {
