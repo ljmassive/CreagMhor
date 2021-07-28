@@ -29,7 +29,7 @@ body.lb-disable-scrolling {
   display: block;
   height: auto;
   max-width: inherit;
-  max-height: none;
+  max-height: 90vh;
   border-radius: 3px;
 
   /* Image border */
@@ -50,7 +50,7 @@ body.lb-disable-scrolling {
 
   /* Background color behind image.
      This is visible during transitions. */
-  background-color: white;
+  background-color: rgba(22, 24, 29);
 }
 
 .lb-outerContainer:after {

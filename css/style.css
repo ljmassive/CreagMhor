@@ -10,7 +10,9 @@
   --bg-light-grey: rgb(211, 214, 222, 0.9);
   --bg-orange-yellow: rgb(255, 196, 0, 0.9);
 }
-
+html {
+  background-color: rgb(255, 196, 0, 0.15);
+}
 body {
   font-size: medium;
   background-image: linear-gradient(
@@ -98,6 +100,7 @@ a:focus,
   font-family: var(--title-font);
   color: white;
   font-size: 24px;
+  text-shadow: -0.5px -0.5px var(--orange-yellow),-0.5px 0.5px var(--orange-yellow),0.5px -0.5px var(--orange-yellow),0.5px 0.5px var(--orange-yellow);
 }
 #contact-target {
   font-family: var(--title-font);
@@ -133,7 +136,7 @@ a:focus,
 #about {
   display: block;
   margin: auto;
-  max-width: 900px;
+  max-width: 860px;
   color: var(--dark-grey);
   padding: 0 20px;
 }
@@ -208,6 +211,7 @@ li {
 }
 .yellow-box {
   margin: auto;
+
   background-color: var(--orange-yellow);
   opacity: 95%;
   color: var(--dark-grey);
@@ -314,4 +318,23 @@ label {
   border: 2px solid white;
   font-family: var(--title-font);
   font-size: 24px;
+}
+
+@media screen and (min-width: 900px) {
+  #info .feature-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+  }
+  #info .feature {
+    width: 301px;
+
+  }
+
+  #contact-text {
+    max-width: 740px;
+  }
 }
