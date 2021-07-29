@@ -20,7 +20,7 @@ body {
       rgba(252, 189, 0, 0.1),
       rgba(252, 189, 0, 0.1)
     ),
-    url(file:///home/lucy/Documents/Tris/images/16-bed-view.jpg);
+    url(../images/16-bed-view.jpg);
   background-repeat: no-repeat;
   background-size: 900px;
   background-attachment: fixed;
@@ -92,7 +92,7 @@ a:focus,
       rgba(252, 189, 0, 0.1),
       rgba(252, 189, 0, 0.1)
     ),
-    url(file:///home/lucy/Documents/Tris/images/16-bed-view.jpg);
+    url(../images/16-bed-view.jpg);
   background-repeat: no-repeat;
   background-size: 900px;
   background-attachment: fixed;
