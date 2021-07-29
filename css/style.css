@@ -20,7 +20,7 @@ body {
       rgba(252, 189, 0, 0.1),
       rgba(252, 189, 0, 0.1)
     ),
-    url(file:///home/lucy/Documents/Tris/images/16-bed-view.jpg);
+    url(../images/16-bed-view.jpg);
   background-repeat: no-repeat;
   background-size: 900px;
   background-attachment: fixed;
@@ -92,7 +92,7 @@ a:focus,
       rgba(252, 189, 0, 0.1),
       rgba(252, 189, 0, 0.1)
     ),
-    url(file:///home/lucy/Documents/Tris/images/16-bed-view.jpg);
+    url(../images/16-bed-view.jpg);
   background-repeat: no-repeat;
   background-size: 900px;
   background-attachment: fixed;
@@ -105,7 +105,7 @@ a:focus,
 #contact-target {
   font-family: var(--title-font);
   /* background-image: 
-    /* linear-gradient(155deg, rgba(15, 29, 156, 0.35), rgba(252, 189, 0, 0.35), rgba(15, 29, 156, 0.35)),  url(file:///home/lucy/Documents/Tris/images/16-bed-view-small.jpg); */
+    /* linear-gradient(155deg, rgba(15, 29, 156, 0.35), rgba(252, 189, 0, 0.35), rgba(15, 29, 156, 0.35)),  url(../images/16-bed-view-small.jpg); */
 }
 
 #welcome-text {
