@@ -161,28 +161,28 @@
         <form class="yellow-box" action="contact-form-process.php" method=”post” name=”contact-form”>
         <div class="form-group">
           <label id="name-label">Name</label><br>
-          <input type="text" class="input-box" id="Name" name="Name" placeholder="Your Name" required>
+          <input  disabled type="text" class="input-box" id="Name" name="Name" placeholder="Your Name" required>
         </div>
         <div class="form-group">
           <label id="email-label">Email</label><br>
-          <input type="email" class="input-box" id="Email" name="Email" placeholder="example@email.com" required>
+          <input  disabled type="email" class="input-box" id="Email" name="Email" placeholder="example@email.com" required>
         </div>
         <div class="form-group">
           <label id="phone-label">Phone</label><br>
-          <input type="text" class="input-box" id="Phone" name="Phone" placeholder="(+44)7123456789">
+          <input  disabled type="text" class="input-box" id="Phone" name="Phone" placeholder="(+44)7123456789">
         </div>
         <div class="form-group">
           <label id="check-in-label">Check-in date</label><br>
-          <input type="date" class="input-box" id="Check-in" name="Check-in" placeholder="DD-MM-YY">
+          <input  disabled type="date" class="input-box" id="Check-in" name="Check-in" placeholder="DD-MM-YY">
         </div>
         <div class="form-group">
           <label id="check-out-label">Check-out date</label><br>
-          <input type="date" class="input-box" id="Check-out" name="Check-in" placeholder="DD-MM-YY">
+          <input  disabled type="date" class="input-box" id="Check-out" name="Check-in" placeholder="DD-MM-YY">
         </div>
 
         <div class="form-group">
           <label id="flexible-date">Are your dates flexible?</label><br>
-          <input
+          <input  disabled
             id="Flexibile"
             name="Flexibile"
             value="flexible"
@@ -195,13 +195,13 @@
 
         <div class="form-group">
           <label id="contact-method">How would you prefer us to contact you?</label><br>
-          <label class="form-opt"><input
+          <label class="form-opt"><input  disabled
               name="Contact-method"
               value="email"
               type="radio"
               class="input-radio"
             />Email</label>
-          <label class="form-opt"><input 
+          <label class="form-opt"><input  disabled 
               name="Contact-method"
               value="phonecall"
               type="radio"
@@ -211,7 +211,7 @@
         <div class="form-group">
           
           <label>Please enter any additional information:</label><br>
-          <textarea
+          <textarea  disabled
             id="extra-info"
             class="input-box"
             name="Comment"
@@ -220,7 +220,7 @@
         </div>
 
         <div class="form-group">
-          <input type="submit" id="submit" name="Submit" />
+          <input type="submit" id="submit" name="Submit" disabled />
             
         </div>
       </form>

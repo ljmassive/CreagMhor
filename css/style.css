@@ -231,6 +231,9 @@ li {
   font-weight: bold;
 }
 
+#submit {
+  background-color: var(--mid-grey);
+}
 .form-group {
   margin: 1em 0;
 
