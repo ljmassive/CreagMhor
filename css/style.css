@@ -148,7 +148,7 @@ a:focus,
 
 .svg-icon {
   width: 40px;
-  height: auto;
+  height: 40px;
   background-color: var(--mid-grey);
   padding: 4px;
   /*border: 1px solid var(--orange-yellow);*/
@@ -183,6 +183,7 @@ a:focus,
 }
 #gallery img {
   width: 200px;
+  height: 200px;
   margin: 10px 10px;
   border: 2px solid var(--light-grey);
 }
