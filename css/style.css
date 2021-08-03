@@ -20,13 +20,13 @@ body {
       rgba(252, 189, 0, 0.1),
       rgba(252, 189, 0, 0.1)
     ),
-    url(../images/16-bed-view.jpg);
+    url(https://www.walkhighlands.co.uk/lochlomond/2_2/2_2_1l.JPG);
   background-repeat: no-repeat;
-  background-size: 900px;
+  background-size: cover;
   background-attachment: fixed;
-  background-position: 50% 35%;
+  background-position: 0 45px;
   position: relative;
-  /* width: 100%; */
+   width: 100%; 
   margin: 0px;
   /*   top: 0; */
   /*   left: -10px; */
@@ -92,11 +92,12 @@ a:focus,
       rgba(252, 189, 0, 0.1),
       rgba(252, 189, 0, 0.1)
     ),
-    url(../images/16-bed-view.jpg);
+    url(https://www.walkhighlands.co.uk/lochlomond/2_2/2_2_1l.JPG);
   background-repeat: no-repeat;
-  background-size: 900px;
+  background-size: cover;
   background-attachment: fixed;
-  background-position: 50% 35% ;/*0 45px;*/
+  background-position: 0 45px;
+  position: relative;
   font-family: var(--title-font);
   color: white;
   font-size: 24px;
