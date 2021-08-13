@@ -9,26 +9,28 @@
   --bg-mid-grey: rgba(138, 146, 168, 0.90);
   --bg-light-grey: rgb(211, 214, 222, 0.9);
   --bg-orange-yellow: rgb(255, 196, 0, 0.9);
+  --main-background: "../images/background.jpeg";
 }
 html {
-  background-color: rgb(255, 196, 0, 0.15);
+  background-color: var(--dark-grey);
 }
 body {
+  display: block;
+  margin: auto;
   font-size: medium;
   background-image: linear-gradient(
       155deg,
       rgba(252, 189, 0, 0.1),
       rgba(252, 189, 0, 0.1)
     ),
-    url(https://www.walkhighlands.co.uk/lochlomond/2_2/2_2_1l.JPG);
+    url('../images/background.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 45px;
   position: relative;
-   width: 100%; 
-  margin: 0px;
-  background-color: var(--bg-light-greylight-grey);
+  max-width: 1400px;
+  background-color: var(--bg-light-grey);
 }
 
 h2,
@@ -55,7 +57,8 @@ a:focus,
 
 #navbar,
 #footer {
-  width: 100%;
+  width: 100%; 
+
   background-color: var(--orange-yellow);
   box-shadow: 0px 0px 5px var(--mid-grey);
   font-family: var(--title-font);
@@ -65,7 +68,11 @@ a:focus,
   position: fixed;
   z-index: 999;
   padding: 10px;
-
+  margin: 0px;
+  max-width: 1380px;
+}
+#footer {
+  width: 100%; 
 }
 .navlink-container {
   float: right;
@@ -82,6 +89,7 @@ a:focus,
 #contact-target {
   position: relative;
   width: 100%;
+  min-height: 50vh;
   top: 0;
   left: 0;
   padding: 4em 0px;
@@ -91,7 +99,7 @@ a:focus,
       rgba(252, 189, 0, 0.1),
       rgba(252, 189, 0, 0.1)
     ),
-    url(https://www.walkhighlands.co.uk/lochlomond/2_2/2_2_1l.JPG);
+    url('../images/background.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -100,13 +108,17 @@ a:focus,
   font-family: var(--title-font);
   color: white;
   font-size: 24px;
-  text-shadow: -0.5px -0.5px var(--orange-yellow),-0.5px 0.5px var(--orange-yellow),0.5px -0.5px var(--orange-yellow),0.5px 0.5px var(--orange-yellow);
+  
 }
 #contact-target {
+
+  /* min-height: 90vh; */
   font-family: var(--title-font);
+  padding-top: 25vh;
 }
 
 #welcome-text {
+  text-shadow: -0.5px -0.5px var(--mid-grey),-0.5px 0.5px var(--mid-grey),0.5px -0.5px var(--mid-grey),0.5px 0.5px var(--mid-grey);
   max-width: 900px;
   display: block;
   margin: auto;
@@ -126,12 +138,12 @@ a:focus,
 }
 
 .lg-container {
-  background-color: var(--bg-light-grey);
+  background-color: var(--light-grey);
   width: 100%;
-  padding: 6em 0;
+  padding: 2em 0;
 }
 #info,
-#about {
+#reviews {
   display: block;
   margin: auto;
   max-width: 860px;
@@ -139,9 +151,37 @@ a:focus,
   padding: 0 20px;
 }
 #info {
-
   max-width: max-content;
 }
+#reviews hr {
+  color: var(--orange-yellow);
+  border-color: var(--orange-yellow);
+}
+
+#med-about-image,
+.sml-about-image {
+  border: 2px solid var(--orange-yellow);
+}
+.sml-about-image {
+  display: block;
+  margin: 2em auto;
+}
+#med-about-image {
+  display: none;
+  margin: 3em 0;
+}
+#about-text-pt1 {
+  max-width: 800px;
+  text-align: justify;
+  margin-bottom: 3em;
+}
+#about-text-pt2 {
+  display: block;
+  margin: 3em auto auto auto;
+  max-width: 800px;
+  text-align: justify;
+}
+
 
 .svg-icon {
   width: 40px;
@@ -150,7 +190,12 @@ a:focus,
   padding: 4px;
   border-radius: 5px;
 }
-
+.feature-container {
+  display:block;
+  margin: auto;
+  max-width: max-content;
+  margin-bottom: 3em;
+}
 .feature {
   display: flex;
   align-items: center;
@@ -163,7 +208,7 @@ a:focus,
 
 #gallery {
   text-align: center;
-  background-color: var(--bg-dark-grey);
+  background-color: var(--mid-grey);
   padding: 4em 0px;
   font-size: 24px;
   font-family: var(--text-font);
@@ -187,13 +232,6 @@ a:focus,
   transform: scale(1.05);
 }
 
-#about h2 {
-  text-align: right;
-}
-#about p {
-  text-align: justify;
-}
-
 #contact {
   display: block;
   margin: auto;
@@ -201,7 +239,7 @@ a:focus,
 }
 #contact-text {
   display: block;
-  max-width: 75vw;
+  max-width: 360px;
 }
 .yellow-box {
   margin: auto;
@@ -251,7 +289,7 @@ a:focus,
 
 .availability-button {
   text-align: center;
-  margin: 3em auto 0 auto; /* 3em auto; */
+  margin: 2em auto;
   padding: 20px;
   width: 168px;
   background: var(--orange-yellow);
@@ -260,7 +298,30 @@ a:focus,
   font-family: var(--title-font);
   font-size: 24px;
 }
-
+@media screen and (min-width: 768px) {
+  #about {
+    max-width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #about-text-pt1 {
+    max-width: 340px;
+    text-align: justify;
+  }
+  #med-about-image {
+    display: block;
+  }
+  .sml-about-image {
+    display: none;
+  }
+  .availability-button {
+    margin: 3em auto;
+  }
+  .lg-container {
+    padding: 2.5em 0;
+  }
+}
 @media screen and (min-width: 900px) {
   #info .feature-container {
     max-width: 900px;
@@ -274,8 +335,10 @@ a:focus,
     width: 301px;
 
   }
-
-  #contact-text {
-    max-width: 740px;
+  .availability-button {
+    margin: 4em auto;
+  }
+  .lg-container {
+    padding: 3em 0;
   }
 }
