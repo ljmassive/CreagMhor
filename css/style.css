@@ -209,7 +209,7 @@ a:focus,
 #gallery {
   text-align: center;
   background-color: var(--mid-grey);
-  padding: 4em 0px;
+  padding: 4em 0px 0px 0px;
   font-size: 24px;
   font-family: var(--text-font);
 }
