@@ -31,6 +31,7 @@ body {
   position: relative;
   max-width: 1400px;
   background-color: var(--bg-light-grey);
+  overflow-x: hidden;
 }
 
 h2,
@@ -93,7 +94,6 @@ a:focus,
   font-size: 22px;
   display: none;
   position: absolute;
-  top: 1.5em;
   background-color: var(--orange-yellow);
   min-width: 100px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -106,10 +106,22 @@ a:focus,
   display: block;
 }
 
-.dropdown-content a:hover {background-color: var(--orange-yellow);}
+.dropdown-content a:hover, 
+.dropdown-content a:focus {
+  background-color: var(--orange-yellow);
 
-.dropdown:hover .dropdown-content {display: block;}
+}
 
+.dropdown:hover .dropbtn,
+.dropdown:focus .dropbtn {
+  font-weight: bold;
+  color: var(--dark-grey);
+}
+
+.dropdown:hover .dropdown-content, 
+.dropdown:focus .dropdown-content {
+  display: block;
+}
 
 #footer {
   width: 100%; 
@@ -151,10 +163,8 @@ a:focus,
   
 }
 #contact-target {
-
-  /* min-height: 90vh; */
   font-family: var(--title-font);
-  padding-top: 25vh;
+  padding-top: 2em;
 }
 
 #welcome-text {
@@ -182,6 +192,15 @@ a:focus,
   width: 100%;
   padding: 2em 0;
 }
+
+.dg-container {
+  background-color: rgb(87, 95, 117);
+  width: 100%;
+  padding: 2em 0;
+
+}
+
+
 #info,
 #reviews {
   display: block;
@@ -190,13 +209,20 @@ a:focus,
   color: var(--dark-grey);
   padding: 0 20px;
 }
-#info {
+
+
+/* #info {
   max-width: max-content;
+} */
+.dg-container #info {
+  color: #f0f1f4;
 }
 #reviews hr {
   color: var(--orange-yellow);
   border-color: var(--orange-yellow);
 }
+
+
 
 .med-about-image,
 .sml-about-image {
@@ -285,7 +311,7 @@ a:focus,
   max-width: 360px;
 }
 .yellow-box {
-  margin: auto;
+  margin: 3em auto;
 
   background-color: var(--orange-yellow);
   opacity: 95%;
@@ -301,7 +327,19 @@ a:focus,
 #contact-target a {
   text-decoration: underline;
 }
+#map-box {
+  min-width: 360px;
+  max-width: max-content;
+  display: block;
+  margin: 1em auto;
+  padding: 0.5em;
+}
 
+.map {
+  border: 0;
+  min-width: 350px;
+  min-height: 263px;
+}
 
 .byline {
   text-align: right;
@@ -376,6 +414,10 @@ a:focus,
   .lg-container {
     padding: 2.5em 0;
   }
+  #info h2 {
+    padding: 0 2em;
+  }
+
 }
 @media screen and (min-width: 900px) {
   #info .feature-container {
@@ -394,5 +436,17 @@ a:focus,
   }
   .lg-container {
     padding: 3em 0;
+  }
+
+  #map-box {
+    padding: 1.5em;
+  }
+  #contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #contact-target {
+    padding-top: 25vh; 
   }
 }
