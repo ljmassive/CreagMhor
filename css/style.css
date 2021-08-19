@@ -34,8 +34,12 @@ body {
 }
 
 h2,
+.about-text h4,
 p {
   font-family: var(--text-font);
+}
+.about-text h4 {
+  text-decoration: underline;
 }
 a,
 a:active,
@@ -71,6 +75,42 @@ a:focus,
   margin: 0px;
   max-width: 1380px;
 }
+
+.dropbtn {
+  font-size: 22px;
+  font-family: var(--title-font);
+  color: var(--dark-grey);
+  background-color: var(--orange-yellow);
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  font-size: 22px;
+  display: none;
+  position: absolute;
+  top: 1.5em;
+  background-color: var(--orange-yellow);
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--dark-grey);
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: var(--orange-yellow);}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
 #footer {
   width: 100%; 
 }
@@ -158,7 +198,7 @@ a:focus,
   border-color: var(--orange-yellow);
 }
 
-#med-about-image,
+.med-about-image,
 .sml-about-image {
   border: 2px solid var(--orange-yellow);
 }
@@ -166,9 +206,11 @@ a:focus,
   display: block;
   margin: 2em auto;
 }
-#med-about-image {
+.med-about-image {
   display: none;
   margin: 3em 0;
+  width: 360px;
+  height: 480px;
 }
 #about-text-pt1 {
   max-width: 800px;
@@ -195,11 +237,12 @@ a:focus,
   margin: auto;
   max-width: max-content;
   margin-bottom: 3em;
+  padding: 1em auto;
 }
 .feature {
   display: flex;
   align-items: center;
-  margin-top: 1em;
+  margin: 0.75em auto;
 }
 
 .feature p {
@@ -215,7 +258,7 @@ a:focus,
 }
 .gallery-container {
   max-height: 500px;
-  overflow: scroll;
+  overflow-y: scroll;
   display: block;
   margin: auto;
   max-width: 1000px;
@@ -291,25 +334,37 @@ a:focus,
   text-align: center;
   margin: 2em auto;
   padding: 20px;
-  width: 168px;
   background: var(--orange-yellow);
   color: var(--dark-grey);
   border: 2px solid white;
   font-family: var(--title-font);
   font-size: 24px;
 }
+
+.title { 
+  font-family: var(--title-font);
+  color: white;
+  font-size: 24px;
+  padding: 3em 0 3em 0;
+  margin-bottom: 3em;
+  min-height: 6em;
+}
+
+
+
 @media screen and (min-width: 768px) {
-  #about {
+  #info .about-container {
     max-width: 900px;
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
-  #about-text-pt1 {
+  #about-text-pt1, #about-text-pt2, .about-text {
     max-width: 340px;
     text-align: justify;
+    margin: 0px;
   }
-  #med-about-image {
+  .med-about-image {
     display: block;
   }
   .sml-about-image {
@@ -329,11 +384,10 @@ a:focus,
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
+    align-items: center;
   }
   #info .feature {
     width: 301px;
-
   }
   .availability-button {
     margin: 4em auto;

@@ -37,10 +37,23 @@
 <body>
   <nav id="navbar">
     <div class="navlink-container">
-      <a href=#welcome class="navlink">Home</a>
-      <a href=#info-target class="navlink">About Us</a>
-      <a href=#gallery class="navlink">Gallery</a>
-      <a href=#contact-target class="navlink">Contact</a>
+      <a href='index.html#welcome' class="navlink">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">The Apartment</button>
+        <div class="dropdown-content">
+          <a href='index.html#info-target' class="navlink">About</a>
+          <a href='index.html#gallery' class="navlink">Gallery</a>
+          <a href='index.html#about-target' class="navlink">Reviews</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">What to do</button>
+        <div class="dropdown-content">
+          <a href='todo.html' class="navlink">Walks</a>
+          <a href='todo.html' class="navlink">Activities</a>
+          <a href='todo.html' class="navlink">Attractions</a>
+        </div>
+      </div>
     </div>
   </nav>
 
@@ -63,10 +76,10 @@
 
 <div id="info-target" class="lg-container">
   <div id="info"> 
-    <div id="about">
+    <div class="about-container">
       <img class="sml-about-image lazyload" data-src="images/LivingRoom-Small.jpg" alt="Image of the living room." />
       
-      <img id="med-about-image" class="lazyload" data-src="images/LivingRoom-Med.jpg" alt="Image of the living room."  /> 
+      <img class="med-about-image lazyload" data-src="images/LivingRoom-Med.jpg" alt="Image of the living room."  /> 
       <div id="about-text-pt1">
         <p>We look forward to welcoming you to Creag Mhor Self-Catering Holiday Apartment! Located in the heart of the picturesque village of Aberfoyle, in The Trossach's, Scotland's first National Park. </p>
         <p>The apartment was recently redecorated and is a spacious two-bedroom first floor maisonette, which comfortably sleeps four, perfect for couples and families. The whole of the apartment is yours to use for the duration of your stay. We are ideally situated for easy access to all amenities - bars, restaurants, shops, play park, etc.</p>
@@ -107,11 +120,13 @@
         <p>Entertainment system for rainy/rest days.</p>
       </div>
     </div>
-    <div id="about-text-pt2">
-      <p>Whether you are here for a weekend-break or for a month, Creag Mhor Apartment is your home-away-from-home; with all bedding and towels provided, washing and kitchen facilities, and entertainment system with streaming services available for cozy evenings in. Outside the property there is a communal close, drying green and lawned area.</p>
-      <img class="sml-about-image lazyload" data-src="images/Woodland-Small.jpg" alt="Image of woodland path, in Queen Elizabeth Forest Park."  />  
-      <p>Just minutes away is the fabulous Queen Elizabeth Forest Park which surrounds the village, where you can walk, fish, cycle to your hearts content. The Aberfoyle 18 hole golf course is a 5 minute drive and the Lake of Menteith Fishery just 5 miles away.</p>
-      
+    <div class="about-container">
+      <div id="about-text-pt2">
+        <p>Whether you are here for a weekend-break or for a month, Creag Mhor Apartment is your home-away-from-home; with all bedding and towels provided, washing and kitchen facilities, and entertainment system with streaming services available for cozy evenings in. Outside the property there is a communal close, drying green and lawned area.</p>
+        <img class="sml-about-image lazyload" data-src="images/Woodland-Small.jpg" alt="Image of woodland path, in Queen Elizabeth Forest Park."  />  
+        <p>Just minutes away is the fabulous Queen Elizabeth Forest Park which surrounds the village, where you can walk, fish, cycle to your hearts content. The Aberfoyle 18 hole golf course is a 5 minute drive and the Lake of Menteith Fishery just 5 miles away.</p>
+      </div>
+      <img class="med-about-image lazyload" data-src="images/Woodland-Med.jpg" alt="Image of woodland path, in Queen Elizabeth Forest Park."  /> 
     </div>
   </div>
   <form class="widget" target="_blank" action="https://portal.freetobook.com/reservations">
