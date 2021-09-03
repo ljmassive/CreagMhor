@@ -389,7 +389,18 @@ a:focus,
   min-height: 6em;
 }
 
-
+@media screen and (max-width: 375px) {
+  .map {
+    min-width:340px;min-height:240px;
+    width: 340px;height:240px;
+    display: block;
+    margin: auto;
+  }
+  #map-box {
+    min-width:340px;
+    max-width:100vw;
+  }
+}
 
 @media screen and (min-width: 768px) {
   #info .about-container, 
