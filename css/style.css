@@ -28,6 +28,7 @@ body {
   background-repeat: repeat;
   background-size: 1400px auto; 
   background-attachment: fixed;
+  background-position:top -20vh center; 
   position: relative;
   max-width: 1400px;
   background-color: var(--bg-light-grey);
@@ -155,7 +156,7 @@ a:focus,
   background-repeat: repeat;
   background-size: 100% auto; 
   background-attachment: fixed;
-  /* background-position: 0 45px; */
+  background-position: top 5vh center;
   position: relative;
   font-family: var(--title-font);
   color: white;
